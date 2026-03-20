@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h2>ECMS</h2>
+  <div>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="electricians.html">Electricians</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="tasks.html">Tasks</a>
+    <a href="reports.html">Reports</a>
+    <a href="index.html">Logout</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <h2>Job Management</h2>
+
+  <!-- Add Job Form -->
+  <div class="form-box">
+    <h3>Create Job</h3>
+
+    <input type="text" placeholder="Job Title">
+    <input type="text" placeholder="Location">
+
+    <select>
+      <option>Select Electrician</option>
+      <option>Ramesh</option>
+      <option>Suresh</option>
+    </select>
+
+    <input type="date">
+
+    <select>
+      <option>Status</option>
+      <option>Pending</option>
+      <option>In Progress</option>
+      <option>Completed</option>
+    </select>
+
+    <button class="btn">Add Job</button>
+  </div>
+
+  <!-- Jobs Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Job Title</th>
+        <th>Location</th>
+        <th>Electrician</th>
+        <th>Deadline</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Wiring Work</td>
+        <td>Bangalore</td>
+        <td>Ramesh</td>
+        <td>2026-03-25</td>
+        <td>In Progress</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Meter Installation</td>
+        <td>Mysore</td>
+        <td>Suresh</td>
+        <td>2026-03-28</td>
+        <td>Pending</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>
