@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Electrician Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h2>ECMS</h2>
+  <div>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="electricians.html">Electricians</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="tasks.html">Tasks</a>
+    <a href="reports.html">Reports</a>
+    <a href="index.html">Logout</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <h2>Electrician Management</h2>
+
+  <!-- Add Electrician Form -->
+  <div class="form-box">
+    <h3>Add Electrician</h3>
+
+    <input type="text" placeholder="Full Name">
+    <input type="text" placeholder="Phone Number">
+    <input type="text" placeholder="Experience (Years)">
+
+    <button class="btn">Add Electrician</button>
+  </div>
+
+  <!-- Electrician Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Experience</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Ramesh</td>
+        <td>9876543210</td>
+        <td>5 Years</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Suresh</td>
+        <td>9123456780</td>
+        <td>3 Years</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>
