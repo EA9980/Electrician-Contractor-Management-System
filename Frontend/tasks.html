@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Tracking</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h2>ECMS</h2>
+  <div>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="electricians.html">Electricians</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="tasks.html">Tasks</a>
+    <a href="reports.html">Reports</a>
+    <a href="index.html">Logout</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <h2>Task Tracking</h2>
+
+  <!-- Add Task Form -->
+  <div class="form-box">
+    <h3>Create Task</h3>
+
+    <input type="text" placeholder="Task Title">
+    
+    <select>
+      <option>Select Electrician</option>
+      <option>Ramesh</option>
+      <option>Suresh</option>
+    </select>
+
+    <select>
+      <option>Progress Status</option>
+      <option>Not Started</option>
+      <option>In Progress</option>
+      <option>Completed</option>
+    </select>
+
+    <input type="date">
+
+    <button class="btn">Add Task</button>
+  </div>
+
+  <!-- Task Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Task Title</th>
+        <th>Electrician</th>
+        <th>Status</th>
+        <th>Deadline</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Fix Wiring Issue</td>
+        <td>Ramesh</td>
+        <td>In Progress</td>
+        <td>2026-03-22</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Install Switch Board</td>
+        <td>Suresh</td>
+        <td>Not Started</td>
+        <td>2026-03-25</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>
